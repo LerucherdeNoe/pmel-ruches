@@ -1,1 +1,5 @@
-test dashboard ruches
+<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Ruches</title></head><body><script>
+fetch('https://docs.google.com/spreadsheets/d/1BAb9RnZymON74QvU7beGOE-plm6ARdo_samfwo3CHGk/gviz/tq?tqx=out:json')
+.then(r=>r.text()).then(t=>document.body.innerHTML='<pre>'+t.substring(0,500)+'</pre>')
+.catch(e=>document.body.innerHTML='Erreur: '+e)
+</script></body></html>
